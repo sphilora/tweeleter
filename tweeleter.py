@@ -30,7 +30,7 @@ def delete_statuses(statuses_to_delete):
         try:
             delete_status(status.id)
         except:
-            print(f'Could not delete status with ID {status.id}')
+            print(f'Failed to delete status with ID {status.id}')
 
 
 def find_latest_tweet(timeline):
